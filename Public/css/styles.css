@@ -11,7 +11,7 @@ body {
 
 .navbar {
     background-color: #ffffff;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #fff;
 }
 
 .container {
@@ -25,9 +25,10 @@ body {
 
 .logo a {
     text-decoration: none;
-    color: #333333;
+    color: blue;
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: cursive;
 }
 
 .nav-links ul {
@@ -38,26 +39,37 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #333333;
+    color: blue;
     font-size: 1rem;
     transition: color 0.3s;
+    font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: #18bc9c;
+    color: rgb(183, 182, 182);
 }
 
-.signup {
-    background-color: #18bc9c;
-    color: #ffffff;
-    padding: 5px 10px;
-    border-radius: 5px;
+.nav-links .signup {
+    background-color: blue;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+.nav-links .login {
+    background-color: #ffffff;
+    color: blue;
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid blue;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .signup:hover {
-    background-color: #15a589;
+    background-color: rgb(214, 212, 212);
 }
-
+.login:hover {
+    background-color: rgb(214, 212, 212);;
+}
 /* Mobile Menu Button */
 .mobile-menu {
     display: none;
