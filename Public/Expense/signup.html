@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Signup - GoodBudget Style</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: blue;
+            text-decoration: none;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 20px;
+        }
+        .navbar .menu a {
+            text-decoration: none;
+            color: blue;
+            font-size: 1em;
+            font-weight: bold;
+        }
+        .navbar .menu a:hover {
+            color: rgb(183, 182, 182);
+        }
+        .navbar .buttons a {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: 1px solid blue;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .navbar .buttons a:first-child {
+            color: blue;
+            background-color: #ffffff;
+        }
+        .navbar .buttons a:first-child:hover {
+            color: rgb(183, 182, 182);
+        }
+        .navbar .buttons a:last-child {
+            color: #ffffff;
+            background-color: blue;
+        }
+        .navbar .buttons a:last-child:hover {
+            background-color: rgb(183, 182, 182);
+        }
+
+        /* Header Section */
+        .header {
+            background-color: rgb(57, 57, 214);
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 30px;
+            clip-path: polygon(0 0, 100% 0, 100% 70%, 0 85%);
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+
+        /* Signup Form Container */
+        .signup-container {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            margin: -40px auto 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .signup-container h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+            text-align: center;
+        }
+        .signup-container p {
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            color: #666;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-size: 0.9em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+            width: 100%;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .terms {
+            font-size: 0.8em;
+            color: #666;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .terms a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        .terms a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Goodbudget</a>
+        <div class="menu">
+            <a href="#">How It Works</a>
+            <a href="#">What You Get</a>
+            <a href="#">The Goodbudget Way</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="buttons">
+            <a href="#">Log In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Sign up</h1>
+        <p>Envelope budgeting for the modern world.</p>
+    </header>
+
+    <div class="signup-container">
+        <h2>Create Your Account</h2>
+        <p>Start budgeting for a better future.</p>
+        <form action="/signup" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="terms">By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+    </div>
+</body>
+</html>
