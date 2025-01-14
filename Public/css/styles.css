@@ -126,6 +126,7 @@ body {
     font-weight: bold;
     color: blue;
     text-decoration: none;
+    font-family: cursive;
 }
 .navbar .menu {
     display: flex;
@@ -225,7 +226,7 @@ input[type="password"] {
 }
 button {
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: blue;
     color: white;
     font-size: 1em;
     border: none;
@@ -233,16 +234,16 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #45a049;
+    background-color: rgb(183, 182, 182);
 }
 .terms {
     font-size: 0.8em;
-    color: #666;
+    color: black;
     text-align: center;
     margin-top: 10px;
 }
 .terms a {
-    color: #4CAF50;
+    color: blue;
     text-decoration: none;
 }
 .terms a:hover {
