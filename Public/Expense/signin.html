@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>SignIn - ExpenseWhiz Style</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">ExpenseWhiz</a>
+        <div class="menu">
+            <a href="#">How It Works</a>
+            <a href="#">What You Get</a>
+            <a href="#">The ExpenseWhiz Way</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="buttons">
+            <a href="#">Sign In</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Welcome back <i class="fas fa-user"></i></h1>
+        <p>Envelope budgeting for the modern world.</p>
+    </header>
+    <br><br>
+    <div class="signup-container">
+        <h2>Create Your Account</h2>
+        <p>Start budgeting for a better future.</p>
+        <form action="/signup" method="POST">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p class="terms">By signing up, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+        <p>Already have an account <a href="#" style="text-decoration: none;">Sign in</a></p>
+    </div>
+</body>
+</html>
