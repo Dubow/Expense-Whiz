@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Password Recovery - ExpenseWhiz Style</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/" class="logo">ExpenseWhiz</a>
+        <div class="menu">
+            <a href="#">How It Works</a>
+            <a href="#">What You Get</a>
+            <a href="#">The ExpenseWhiz Way</a>
+            <a href="#">Pricing</a>
+        </div>
+        <div class="buttons">
+            <a href="#">Sign In</a>
+            <a href="register">Sign Up</a>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Recover your logins!!</h1>
+    </header>
+    <br><br>
+    <div class="signup-container">
+        <h2>Enter Your Email Address</h2>
+        <p>We'll send you your Username and a link to reset your password.</p>
+        <form action="/signup" method="POST">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <button type="submit">Sign In</button>
+        </form><br>
+    </div>
+</body>
+</html>
