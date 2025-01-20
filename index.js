@@ -16,6 +16,10 @@ app.get('/signin', (req, res) => {
     res.sendFile(__dirname + '/Public/Expense/signin.html')
 })
 
+app.get('/forgot', (req, res) => {
+    res.sendFile(__dirname + '/Public/Expense/forgot.html')
+})
+
 const PORT = 3000
 app.listen(PORT, () => {
     console.log('Server is running on port ${PORT}')
